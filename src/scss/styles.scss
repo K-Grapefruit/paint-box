@@ -4,6 +4,7 @@
 
 body {
   height: 500vh;
+  min-width: 1250px;
 }
 
 header {
@@ -178,6 +179,7 @@ main {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .main_content_3-1 {
@@ -199,7 +201,7 @@ main {
 .main_content_3-2 {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 .main_content_3-2_info_1 {
   width: 100%;
@@ -217,4 +219,90 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.main_content_3-2_info_1-product span:nth-child(2) {
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-family: freight-display-pro, Times New Roman, serif;
+}
+.main_content_3-2_info_1-product button {
+  width: 240px;
+  height: 55px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.main_content_4 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.main_content_4 div:first-child {
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2.2px;
+  margin-bottom: 20px;
+}
+
+.main_content_4 div:nth-child(2) {
+  font-size: 35px;
+  font-style: italic;
+  font-family: freight-display-pro, Times New Roman, serif;
+  margin-bottom: 50px;
+}
+.main_content_4-pic {
+  margin-bottom: 100px;
+}
+.main_content_4-pic-1 {
+  display: inline-block;
+  width: 12.5%;
+  border-right: 1px solid black;
+}
+
+.main_content_4-pic-1:last-child {
+  border: none;
+}
+
+.main_content_4_btn {
+  border: 1px solid black;
+  padding: 18px 50px 18px 50px;
+}
+
+.main_content_4_btn span {
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.main_content_5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main_content_5_pic {
+  background-color: #f3ede8;
+}
+
+.main_content_5_pic_desc {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 50px 0 50px;
+}
+
+.main_content_5_pic_desc span:first-child {
+  font-family: $time-text;
+}
+
+.main_content_5_pic_desc span:nth-child(2) {
+  font-size: 30px;
+  font-family: $roma;
 }
